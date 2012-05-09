@@ -12,15 +12,6 @@ cd() {
 # Git
 #alias gl='git l'		# git log colors 1
 alias glol='git lol'	# git log colors 2
-#alias gco='git co'		# git checkout
-#alias gf='git fetch'	# git fetch
-#alias gup='git smart-pull'	# git smart-pull
-#alias gs='git status --short'	# git status short
-#alias gr='git rebase -p'	# git rebase
-#alias gm='git merge --no-ff'	# git merge no fast forward
-#alias ga='git add'		# git add
-#alias gp='git push'		# git push
-#alias grh='git reset --hard'	# git reset hard
 
 alias s='git status -sb $argv; return 0'
 
