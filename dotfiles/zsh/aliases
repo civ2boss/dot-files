@@ -36,6 +36,7 @@ alias gd='git diff -M'
 alias gd.='git diff -M --color-words="."'
 alias gdc='git diff --cached -M'
 alias gdc.='git diff --cached -M --color-words="."'
+alias gdt='git difftool'
 alias gf='git fetch'
 git-new() {
   [ -d "$1" ] || mkdir "$1" &&
@@ -85,4 +86,5 @@ gupstation() {
 alias rlt='rake local_tests'
 alias sc='script/console'
 alias ss='script/server'
+alias sg='script/generate'
 alias tlog='tail -F log/development.log'
