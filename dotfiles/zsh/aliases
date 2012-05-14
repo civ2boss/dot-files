@@ -83,8 +83,9 @@ gupstation() {
 }
 
 # Rails
+alias prye='pry -r ./config/environment'
 alias rlt='rake local_tests'
 alias sc='script/console'
-alias ss='script/server'
 alias sg='script/generate'
+alias ss='script/server'
 alias tlog='tail -F log/development.log'
