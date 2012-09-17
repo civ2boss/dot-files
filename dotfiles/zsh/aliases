@@ -2,7 +2,7 @@
 
 # Utility
 alias reload='source ~/bin/dotfiles/zsh/aliases'
-alias ea='mate -w ~/bin/dotfiles/bash/aliases && reload' # Edit aliases
+alias ea='mate -w ~/bin/dotfiles/zsh/aliases && reload' # Edit aliases
 alias ee="mate ~/bin/dotfiles/zsh/env"
 
 cd() {
@@ -89,3 +89,6 @@ alias sc='script/console'
 alias sg='script/generate'
 alias ss='script/server'
 alias tlog='tail -F log/development.log'
+
+# SSH
+alias sshqa='ssh robin@qa.tunecore.org'
