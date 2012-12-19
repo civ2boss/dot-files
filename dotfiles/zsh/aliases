@@ -60,6 +60,7 @@ gls() {
 alias gm='git merge --no-ff'
 alias gmf='git merge --ff-only'
 alias gmfthis='gmf origin/$(git_current_branch)'
+alias gmt='git mergetool'
 alias gp='git push'
 alias gpthis='gp origin $(git_current_branch)'
 alias gr='git reset'
