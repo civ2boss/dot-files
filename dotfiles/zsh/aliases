@@ -16,6 +16,7 @@ alias glol='git lol'	# git log colors 2
 alias s='git status -sb $argv; return 0'
 
 alias ga='git add -A'
+alias gack='git grep --break --heading --line-number'
 alias gap='ga -p'
 alias gau='git add -u'
 alias gbr='git branch -v'
@@ -49,6 +50,7 @@ git-new() {
 git_current_branch() {
   cat "$(git rev-parse --git-dir 2>/dev/null)/HEAD" | sed -e 's/^.*refs\/heads\///'
 }
+alias gksr='git ksreview' # See 'Code Reviews with Kaleidoscope': http://blackpixel.com/blog/2012/11/code-review-kaleidoscope.html
 alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --decorate'
 alias gl='glog --graph'
 alias gla='gl --all'
