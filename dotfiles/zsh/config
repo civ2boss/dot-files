@@ -8,8 +8,11 @@
 # Set RPROMPT to have info show up on the right, too.
 
 # RVM
-if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
+# if [[ -s ~/.rvm/scripts/rvm ]] ; then source ~/.rvm/scripts/rvm ; fi
 # [[ -s "/Users/rting/.rvm/scripts/rvm" ]] && source "/Users/rting/.rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+# RBENV
+eval "$(rbenv init -)"
 
 # Colors
 autoload -U colors
@@ -23,10 +26,10 @@ PROMPT='
 %~
 ${smiley} %{$reset_color%}'
 
-RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/bin/git-cwd-info)%{$reset_color%}'
+# RPROMPT='%{$fg[white]%} $(~/.rvm/bin/rvm-prompt)$(~/bin/git-cwd-info)%{$reset_color%}'
 
 # Replace the above with this if you use rbenv
-# RPROMPT='%{$fg[white]%} $(~/.rbenv/bin/rbenv version-name)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
+RPROMPT='%{$fg[white]%} $(rbenv version)$(~/bin/git-cwd-info.rb)%{$reset_color%}'
 
 # Show completion on first TAB
 setopt menucomplete
