@@ -14,6 +14,9 @@
 # RBENV
 eval "$(rbenv init -)"
 
+# Z
+. ~/z.sh
+
 # Colors
 autoload -U colors
 colors
